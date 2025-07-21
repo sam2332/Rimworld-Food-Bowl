@@ -60,20 +60,21 @@
             <li>Milk</li>
             <li>InsectJelly</li>
             <li>Pemmican</li>
-            <li>Chocolate</li>
             <li>RawBerries</li>
             <li>RawFungus</li>
             <li>RawAgave</li>
           </thingDefs>
           <disallowedThingDefs>
             <li>Meat_Human</li>
-            <li>Meat_Insect</li>
-            <li>SimpleMeal</li>
-            <li>FineMeal</li>
-            <li>LavishMeal</li>
-            <li>SurvivalMeal</li>
+            <li>MealSimple</li>
+            <li>MealFine</li>
+            <li>MealFine_Veg</li>
+            <li>MealFine_Meat</li>
+            <li>MealLavish</li>
+            <li>MealLavish_Veg</li>
+            <li>MealLavish_Meat</li>
+            <li>MealSurvivalPack</li>
             <li>MealNutrientPaste</li>
-            <li>PlantMatter</li>
             <li MayRequire="Ludeon.RimWorld.Anomaly">Meat_Twisted</li>
           </disallowedThingDefs>
         </filter>
