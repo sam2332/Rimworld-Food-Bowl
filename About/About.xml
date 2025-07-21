@@ -11,16 +11,17 @@
 Features:
 - Single-stack storage (holds one stack per bowl)
 - Prevents food deterioration 
-- Optimized for pet foods: Hay, Kibble, Milk, Berries, etc.
-- Excludes human meals (keeps pet food separate)
-- Hidden storage (food is stored but not visually displayed)
-- Cheap to build (only 8 materials vs 20 for shelf)
-- Compact 1x1 footprint
-- Multiple material options (Wood, Steel, Stone)
+- Optimized for animal foods: Hay, Kibble, Milk, InsectJelly, Pemmican, Raw Berries, Raw Fungus, Raw Agave
+- Automatically excludes all human meals (Simple, Fine, Lavish, Survival Packs, Nutrient Paste)
+- Hidden storage (food is stored but not visually displayed in the bowl)
+- Cheap to build (only 8 materials vs 20+ for shelf)
+- Compact 1x1 footprint with low beauty impact
+- Multiple material options (Metallic, Woody, Stony)
 - Found in Furniture category
 - No research required
+- Compatible with RimWorld 1.6
 
-Great for pet feeding stations, animal farms, and keeping your hay and kibble organized!</description>
+Perfect for pet feeding stations, animal farms, ranches, and keeping your animal feed organized and fresh!</description>
   <loadAfter>
   </loadAfter>
 </ModMetaData>
