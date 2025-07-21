@@ -37,6 +37,7 @@
     <building>
       <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
       <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <showStoredThings>false</showStoredThings>
       <maxItemsInCell>1</maxItemsInCell>
       <blueprintClass>Blueprint_Storage</blueprintClass>
       <storageGroupTag>FoodBowl</storageGroupTag>
@@ -53,6 +54,17 @@
           <categories>
             <li>Foods</li>
           </categories>
+          <thingDefs>
+            <li>Hay</li>
+            <li>Kibble</li>
+            <li>Milk</li>
+            <li>InsectJelly</li>
+            <li>Pemmican</li>
+            <li>Chocolate</li>
+            <li>RawBerries</li>
+            <li>RawFungus</li>
+            <li>RawAgave</li>
+          </thingDefs>
           <disallowedThingDefs>
             <li>Meat_Human</li>
             <li>Meat_Insect</li>
@@ -60,7 +72,8 @@
             <li>FineMeal</li>
             <li>LavishMeal</li>
             <li>SurvivalMeal</li>
-            <li>PlantMatter</li>            
+            <li>MealNutrientPaste</li>
+            <li>PlantMatter</li>
             <li MayRequire="Ludeon.RimWorld.Anomaly">Meat_Twisted</li>
           </disallowedThingDefs>
         </filter>
@@ -76,7 +89,7 @@
     <castEdgeShadows>false</castEdgeShadows>
     <surfaceType>Item</surfaceType>
     <canOverlapZones>false</canOverlapZones>
-    <designationCategory>Storage</designationCategory>
+    <designationCategory>Furniture</designationCategory>
     <placeWorkers>
       <li>PlaceWorker_PreventInteractionSpotOverlap</li>
     </placeWorkers>
