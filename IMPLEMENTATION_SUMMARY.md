@@ -1,12 +1,15 @@
 # Food Bowl Mod - Implementation Summary
 
 ## Overview
-The Food Bowl mod adds a single-stack food storage building to RimWorld. It's designed to be cheaper than shelves while providing specialized food storage.
+The Food Bowl mod adds a single-stack food storage building to RimWorld with specialized pet food storage and visual indicators for empty bowls.
 
 ## Files Created
 
 ### Core Definition
-- `Defs/ThingDefs_Buildings/Buildings_FoodBowl.xml` - Main building definition
+- `Defs/ThingDefs_Buildings/Buildings_FoodBowl.xml` - Main building definition with component
+
+### Custom Component  
+- `Source/CompEmptyFoodBowlIndicator.cs` - Visual indicator for empty bowls
 
 ### Graphics
 - `Textures/Things/Building/Furniture/FoodBowl_north.png` - North-facing texture
@@ -18,16 +21,24 @@ The Food Bowl mod adds a single-stack food storage building to RimWorld. It's de
 - `Languages/English/DefInjected/ThingDef/Buildings_FoodBowl.xml` - English text
 
 ### Metadata
-- `About/About.xml` - Mod information
+- `About/About.xml` - Mod information with feature description
 - `About/Preview.png` - Mod preview image
 - `README.md` - Documentation
 
 ## Key Features
 
+### Visual Indicator System
+- **Empty Bowl Alert**: Shows question mark overlay when bowl is empty
+- **Real-time Updates**: Checks every 4 real seconds (unaffected by game speed)
+- **Auto Cleanup**: Removes overlay when bowl is despawned
+
+### Pet Food Specialization
+- **Pet Foods**: Hay, Kibble, Milk, Raw Corn, Corn Meal, Simple Meal
+- **Excluded Items**: Fine/Lavish meals, packaged foods, drugs, berries  
+- **Preservation**: Prevents food deterioration when stored
+
 ### Storage Properties
 - **Single Stack**: `maxItemsInCell: 1` ensures only one stack per food bowl
-- **Food Only**: Uses `Foods` category to accept all food types
-- **Preservation**: `preventDeteriorationOnTop: true` prevents food decay
 - **Storage Group**: Uses `FoodBowl` tag for linking with other food bowls
 
 ### Building Properties

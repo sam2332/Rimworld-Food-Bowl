@@ -3,7 +3,7 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>FoodBowl</defName>
-    <label>food bowl</label>
+    <label>Food Bowl</label>
     <description>A simple single-stack storage container designed specifically for food. Holds one stack of any food type and prevents deterioration. Much cheaper than a shelf but holds less.</description>
     <thingClass>Building_Storage</thingClass>
     <graphicData>
@@ -85,6 +85,7 @@
     </inspectorTabs>
     <comps>
       <li Class="CompProperties_Forbiddable"/>
+      <li Class="FoodBowl.CompProperties_EmptyFoodBowlIndicator"/>
     </comps>
     <staticSunShadowHeight>0.1</staticSunShadowHeight>
     <castEdgeShadows>false</castEdgeShadows>
