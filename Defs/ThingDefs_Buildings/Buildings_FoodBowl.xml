@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>FoodBowl</defName>
+    <label>food bowl</label>
+    <description>A simple single-stack storage container designed specifically for food. Holds one stack of any food type and prevents deterioration. Much cheaper than a shelf but holds less.</description>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Furniture/FoodBowl</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.8,0.8)</drawSize>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.2</fillPercent>
+    <castEdgeShadows>false</castEdgeShadows>
+    <pathCost>42</pathCost>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>8</costStuffCount>
+    <statBases>
+      <MaxHitPoints>60</MaxHitPoints>
+      <WorkToBuild>200</WorkToBuild>
+      <Mass>2</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>1</Beauty>
+    </statBases>
+    <size>(1,1)</size>
+    <rotatable>false</rotatable>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <maxItemsInCell>1</maxItemsInCell>
+      <blueprintClass>Blueprint_Storage</blueprintClass>
+      <storageGroupTag>FoodBowl</storageGroupTag>
+      <fixedStorageSettings>
+        <filter>
+          <categories>
+            <li>Foods</li>
+          </categories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+        <filter>
+          <categories>
+            <li>Foods</li>
+          </categories>
+          <disallowedThingDefs>
+            <li>Meat_Human</li>
+            <li>Meat_Insect</li>
+            <li>SimpleMeal</li>
+            <li>FineMeal</li>
+            <li>LavishMeal</li>
+            <li>SurvivalMeal</li>
+            <li>PlantMatter</li>            
+            <li MayRequire="Ludeon.RimWorld.Anomaly">Meat_Twisted</li>
+          </disallowedThingDefs>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+    </comps>
+    <staticSunShadowHeight>0.1</staticSunShadowHeight>
+    <castEdgeShadows>false</castEdgeShadows>
+    <surfaceType>Item</surfaceType>
+    <canOverlapZones>false</canOverlapZones>
+    <designationCategory>Storage</designationCategory>
+    <placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+    <uiOrder>2060</uiOrder>
+    <tickerType>Never</tickerType>
+  </ThingDef>
+
+</Defs>

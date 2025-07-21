@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Food Bowl -->
+  <FoodBowl.label>food bowl</FoodBowl.label>
+  <FoodBowl.description>A simple single-stack storage container designed specifically for food. Holds one stack of any food type and prevents deterioration. Much cheaper than a shelf but holds less.</FoodBowl.description>
+
+</LanguageData>

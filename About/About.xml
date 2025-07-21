@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Food Bowl</name>
+  <author>Programmer Lily</author>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <packageId>aimodder.foodbowl</packageId>
+  <description>Adds a Food Bowl - a single-stack storage building specifically designed for storing any type of food. Works like a shelf but holds only one stack and is optimized for food storage.
+
+Features:
+- Single-stack food storage
+- Prevents food deterioration 
+- Accepts all food types (raw, cooked, meals)
+- Cheap and easy to build
+- Small 1x1 footprint</description>
+  <loadAfter>
+  </loadAfter>
+</ModMetaData>
