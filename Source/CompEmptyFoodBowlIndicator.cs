@@ -9,8 +9,8 @@ namespace FoodBowl
     {
         private Building_Storage parentStorage;
         private OverlayHandle? emptyOverlayHandle;
-        private float lastCheckTime = 0f;
-        private const float CHECK_INTERVAL_SECONDS = 4f; // Check every 4 seconds
+        private int lastCheckTick = 0;
+        private const int CHECK_INTERVAL_TICKS = 30000; // Check every 30000 ticks about 12 ingame hours
 
         public CompProperties_EmptyFoodBowlIndicator Props => (CompProperties_EmptyFoodBowlIndicator)props;
 
@@ -19,27 +19,27 @@ namespace FoodBowl
             base.PostSpawnSetup(respawningAfterLoad);
             parentStorage = parent as Building_Storage;
             
-            // Initialize check time to avoid immediate check on spawn
+            // Initialize check tick to avoid immediate check on spawn
             if (!respawningAfterLoad)
             {
-                lastCheckTime = UnityEngine.Time.time;
+                lastCheckTick = Find.TickManager.TicksGame;
             }
         }
 
         public override void PostExposeData()
         {
             base.PostExposeData();
-            Scribe_Values.Look(ref lastCheckTime, "lastCheckTime", 0f);
+            Scribe_Values.Look(ref lastCheckTick, "lastCheckTick", 0);
         }
 
-        public override void CompTick()
+        public override void CompTickRare()
         {
-            base.CompTick();
+            base.CompTickRare();
             
-            // Check every 4 real seconds regardless of game speed
-            if (UnityEngine.Time.time >= lastCheckTime + CHECK_INTERVAL_SECONDS)
+            // Check every 250 ticks (same as TickerType.Rare interval)
+            if (Find.TickManager.TicksGame >= lastCheckTick + CHECK_INTERVAL_TICKS)
             {
-                lastCheckTime = UnityEngine.Time.time;
+                lastCheckTick = Find.TickManager.TicksGame;
                 UpdateEmptyIndicator();
             }
         }
@@ -47,10 +47,12 @@ namespace FoodBowl
         private void UpdateEmptyIndicator()
         {
             if (parentStorage?.slotGroup == null || !parent.Spawned)
+            {
                 return;
+            }
 
             bool isEmpty = !parentStorage.slotGroup.HeldThings.Any();
-
+  
             if (isEmpty && !emptyOverlayHandle.HasValue)
             {
                 // Show empty indicator

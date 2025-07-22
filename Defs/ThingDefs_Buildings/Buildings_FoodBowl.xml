@@ -44,37 +44,28 @@
       <fixedStorageSettings>
         <filter>
           <categories>
-            <li>Foods</li>
+            <li>MeatRaw</li>
+            <li>PlantFoodRaw</li>
           </categories>
+          <thingDefs>
+            <li>Kibble</li>
+            <li>Pemmican</li>
+          </thingDefs>
         </filter>
       </fixedStorageSettings>
       <defaultStorageSettings>
         <priority>Important</priority>
         <filter>
           <categories>
-            <li>Foods</li>
+            <li>MeatRaw</li>
+            <li>PlantFoodRaw</li>
           </categories>
           <thingDefs>
-            <li>Hay</li>
             <li>Kibble</li>
-            <li>Milk</li>
-            <li>InsectJelly</li>
             <li>Pemmican</li>
-            <li>RawBerries</li>
-            <li>RawFungus</li>
-            <li>RawAgave</li>
           </thingDefs>
           <disallowedThingDefs>
             <li>Meat_Human</li>
-            <li>MealSimple</li>
-            <li>MealFine</li>
-            <li>MealFine_Veg</li>
-            <li>MealFine_Meat</li>
-            <li>MealLavish</li>
-            <li>MealLavish_Veg</li>
-            <li>MealLavish_Meat</li>
-            <li>MealSurvivalPack</li>
-            <li>MealNutrientPaste</li>
             <li MayRequire="Ludeon.RimWorld.Anomaly">Meat_Twisted</li>
           </disallowedThingDefs>
         </filter>
@@ -87,7 +78,7 @@
       <li Class="CompProperties_Forbiddable"/>
       <li Class="FoodBowl.CompProperties_EmptyFoodBowlIndicator"/>
     </comps>
-    <staticSunShadowHeight>0.1</staticSunShadowHeight>
+    <staticSunShadowHeight>0</staticSunShadowHeight>
     <castEdgeShadows>false</castEdgeShadows>
     <surfaceType>Item</surfaceType>
     <canOverlapZones>false</canOverlapZones>
@@ -96,7 +87,7 @@
       <li>PlaceWorker_PreventInteractionSpotOverlap</li>
     </placeWorkers>
     <uiOrder>2060</uiOrder>
-    <tickerType>Never</tickerType>
+    <tickerType>Rare</tickerType>
   </ThingDef>
 
 </Defs>
