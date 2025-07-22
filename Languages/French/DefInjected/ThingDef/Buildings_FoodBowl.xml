@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Food Bowl -->
+  <FoodBowl.label>bol de nourriture</FoodBowl.label>
+  <FoodBowl.description>Un conteneur de stockage simple à pile unique conçu spécifiquement pour la nourriture. Contient une pile de n'importe quel type de nourriture et empêche la détérioration. Beaucoup moins cher qu'une étagère mais contient moins.</FoodBowl.description>
+
+</LanguageData>

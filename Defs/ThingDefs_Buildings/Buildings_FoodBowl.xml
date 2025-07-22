@@ -4,7 +4,7 @@
   <ThingDef ParentName="BuildingBase">
     <defName>FoodBowl</defName>
     <label>Food Bowl</label>
-    <description>A simple single-stack storage container designed specifically for food. Holds one stack of any food type and prevents deterioration. Much cheaper than a shelf but holds less.</description>
+    <description>A simple single-stack storage container designed specifically for food. Holds one stack of any food type. Much cheaper than a shelf but holds less.</description>
     <thingClass>Building_Storage</thingClass>
     <graphicData>
       <texPath>Things/Building/Furniture/FoodBowl</texPath>
@@ -37,7 +37,6 @@
     <building>
       <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
       <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
-      <showStoredThings>false</showStoredThings>
       <maxItemsInCell>1</maxItemsInCell>
       <blueprintClass>Blueprint_Storage</blueprintClass>
       <storageGroupTag>FoodBowl</storageGroupTag>

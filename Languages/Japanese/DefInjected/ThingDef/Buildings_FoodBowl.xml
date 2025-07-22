@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Food Bowl -->
+  <FoodBowl.label>餌鉢</FoodBowl.label>
+  <FoodBowl.description>食料専用に設計されたシンプルな単一スタック収納容器。あらゆる種類の食料を1スタック保管し、劣化を防ぎます。棚よりもずっと安いですが、収納量は少なくなります。</FoodBowl.description>
+
+</LanguageData>

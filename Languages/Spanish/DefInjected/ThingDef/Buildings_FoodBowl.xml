@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Food Bowl -->
+  <FoodBowl.label>cuenco de comida</FoodBowl.label>
+  <FoodBowl.description>Un contenedor de almacenamiento simple de pila única diseñado específicamente para comida. Contiene una pila de cualquier tipo de comida y previene el deterioro. Mucho más barato que una estantería pero contiene menos.</FoodBowl.description>
+
+</LanguageData>

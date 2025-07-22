@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Food Bowl -->
+  <FoodBowl.label>миска для еды</FoodBowl.label>
+  <FoodBowl.description>Простой контейнер для хранения в одну стопку, специально разработанный для еды. Вмещает одну стопку любого типа пищи и предотвращает порчу. Намного дешевле полки, но вмещает меньше.</FoodBowl.description>
+
+</LanguageData>

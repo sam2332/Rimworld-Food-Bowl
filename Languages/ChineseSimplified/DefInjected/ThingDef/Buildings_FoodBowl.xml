@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Food Bowl -->
+  <FoodBowl.label>食物碗</FoodBowl.label>
+  <FoodBowl.description>专为食物设计的简单单堆存储容器。可存放一堆任何类型的食物并防止变质。比货架便宜得多，但容量较小。</FoodBowl.description>
+
+</LanguageData>
