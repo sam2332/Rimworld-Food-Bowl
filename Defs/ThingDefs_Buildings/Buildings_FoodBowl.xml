@@ -37,7 +37,6 @@
     <building>
       <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
       <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
-      <showStoredThings>false</showStoredThings>
       <maxItemsInCell>1</maxItemsInCell>
       <blueprintClass>Blueprint_Storage</blueprintClass>
       <storageGroupTag>FoodBowl</storageGroupTag>
