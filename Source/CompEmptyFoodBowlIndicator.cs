@@ -9,8 +9,6 @@ namespace FoodBowl
     {
         private Building_Storage parentStorage;
         private OverlayHandle? emptyOverlayHandle;
-        private int lastCheckTick = 0;
-        private const int CHECK_INTERVAL_TICKS = 30000; // Check every 30000 ticks about 12 ingame hours
 
         public CompProperties_EmptyFoodBowlIndicator Props => (CompProperties_EmptyFoodBowlIndicator)props;
 
@@ -18,30 +16,14 @@ namespace FoodBowl
         {
             base.PostSpawnSetup(respawningAfterLoad);
             parentStorage = parent as Building_Storage;
-            
-            // Initialize check tick to avoid immediate check on spawn
-            if (!respawningAfterLoad)
-            {
-                lastCheckTick = Find.TickManager.TicksGame;
-            }
-        }
-
-        public override void PostExposeData()
-        {
-            base.PostExposeData();
-            Scribe_Values.Look(ref lastCheckTick, "lastCheckTick", 0);
         }
 
         public override void CompTickRare()
         {
             base.CompTickRare();
             
-            // Check every 250 ticks (same as TickerType.Rare interval)
-            if (Find.TickManager.TicksGame >= lastCheckTick + CHECK_INTERVAL_TICKS)
-            {
-                lastCheckTick = Find.TickManager.TicksGame;
-                UpdateEmptyIndicator();
-            }
+            // Check every 250 ticks (TickerType.Rare interval) for responsive updates
+            UpdateEmptyIndicator();
         }
 
         private void UpdateEmptyIndicator()

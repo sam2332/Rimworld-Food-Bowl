@@ -25,11 +25,18 @@ The Food Bowl mod adds a single-stack food storage building to RimWorld with spe
 - `About/Preview.png` - Mod preview image
 - `README.md` - Documentation
 
+## Recent Changes
+
+### v1.0.5 - Fixed Empty Bowl Indicator Responsiveness (July 24, 2025)
+- **Fixed**: Empty bowl indicator now clears immediately when bowl is refilled
+- **Technical**: Removed artificial 30,000 tick delay, now checks every 250 ticks for responsive updates
+- **User Experience**: Bowl empty alerts now disappear within 4 in-game hours when food is added
+
 ## Key Features
 
 ### Visual Indicator System
 - **Empty Bowl Alert**: Shows question mark overlay when bowl is empty
-- **Real-time Updates**: Checks every 4 real seconds (unaffected by game speed)
+- **Responsive Updates**: Checks every 250 ticks (about 4 in-game hours) for immediate response when bowls are refilled
 - **Auto Cleanup**: Removes overlay when bowl is despawned
 
 ### Pet Food Specialization
